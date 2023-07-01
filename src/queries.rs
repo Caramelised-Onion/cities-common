@@ -9,6 +9,7 @@ pub struct CitiesQuery {
     pub sort_by_distance: Option<bool>,
     pub sort_by_population: Option<bool>,
     pub minimum_population: Option<i32>,
+    pub limit: Option<usize>,
 }
 
 
