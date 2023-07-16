@@ -20,6 +20,11 @@ pub struct DistQuery {
     pub city_id2: i64,
 }
 
+#[derive(Debug, Serialize, Deserialize, Default, PartialEq, Clone)]
+pub struct CountryQuery {
+    pub country_code: Option<String>
+}
+
 #[derive(Debug, Serialize, Deserialize, PartialEq, Clone)]
 pub enum SortOrder {
     ASC,

@@ -24,3 +24,13 @@ impl City {
         format!("POINT({} {})", self.lng, self.lat)
     }
 }
+
+#[derive(Debug, Serialize, Deserialize, Default, Clone, PartialEq)]
+#[cfg_attr(feature = "sqlxrow", derive(sqlx::FromRow))]
+pub struct Country {
+    pub name: String,
+    pub iso2: String,
+    pub iso3: String,
+    pub geom_wkt: String,
+    pub gid: i32,
+}
