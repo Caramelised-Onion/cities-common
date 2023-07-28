@@ -7,6 +7,8 @@ pub struct CitiesQuery {
     pub country: Option<String>,
     pub radius: Option<usize>,
     pub point: Option<String>,
+    pub geometry_in: Option<String>,
+    pub geometry_out: Option<String>,
     pub sort_by_random: Option<bool>,
     pub sort_by_distance: Option<SortOrder>,
     pub sort_by_population: Option<SortOrder>,
